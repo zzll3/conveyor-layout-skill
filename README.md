@@ -1,11 +1,13 @@
-# 输送线布局识图
+# conveyor-layout-skill
 
-Cursor / Grok Bot 技能：从 AutoCAD 输送线布局图识别设备类型、流向、对接关系、光电与 IO，并整理编号表、IO 表与运行逻辑。
+Cursor / Grok Bot skill：**输送线布局识图 V1.0**（2026-10-19 定稿）。
 
-## 安装
+从 AutoCAD 输送线布局图识别设备类型、流向、对接、光电与 IO，整理编号表、IO 表与运行逻辑。
 
-将 `输送线布局识图/` 目录复制到助手的 skills / workflows 目录（需包含 `SKILL.md`）。
+## 文件
 
-## 何时使用
+- `输送线布局识图/SKILL.md` — 技能正文（V1.0）
 
-提供输送线布局 DWG/DXF，或通过 CAD-MCP 连接图纸，需要识别输送类型/方向/对接、整理编号与 IO、梳理运行逻辑时使用。
+## 使用
+
+将 `输送线布局识图` 目录放入助手的 skills / workflows 目录，或按 Cursor skill 方式安装。
