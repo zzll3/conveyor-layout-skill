@@ -1,15 +1,21 @@
-# conveyor-layout-skill
+# 输送线布局识图 Skill
 
-Cursor / Grok Bot skill：**输送线布局识图 V1.6**（2026-10-19）。
+Cursor / Grok Bot 用的输送线 AutoCAD 布局识图技能。
 
-从 AutoCAD 输送线布局图识别设备类型、流向、对接、任务传递、光电与 IO，整理编号表、IO 表与运行逻辑。
+## 当前版本
 
-V1.6 要点：任务传递 = 青大箭（单头仅箭向 / 双头双向）+ 接收侧运行方向到位门禁；黄细箭不作传递；正反端另看到位光电；禁程序旁证。
+**V1.7（2026-10-19）**
 
-## 文件
+- 移栽机构：`ss+yz+sj`（都带 sj；表内 `FB2_sj` 打勾）
+- 任务传递：青/浅蓝块状大箭头（单头=仅箭向；双头=双向）+ 接收侧对应运行方向到位门禁
+- 表只记本机「任务传出」，不写「任务传入」
+- 黄细箭不作传递；正反端另看到位光电；禁程序旁证
 
-- `输送线布局识图/SKILL.md` — 技能正文（V1.6）
+## 安装
 
-## 使用
+将 `输送线布局识图/` 目录复制到 agent 的 workflows（或 skills）目录即可。
 
-将 `输送线布局识图` 目录放入助手的 skills / workflows 目录，或按 Cursor skill 方式安装。
+## Skill 路径
+
+- 正文：[`输送线布局识图/SKILL.md`](./输送线布局识图/SKILL.md)
+- Raw：https://github.com/zzll3/conveyor-layout-skill/raw/main/输送线布局识图/SKILL.md
