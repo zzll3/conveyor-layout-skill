@@ -1,25 +1,27 @@
-# 输送线布局识图 Skill
+# Conveyor layout recognition skill
 
-Cursor / Grok Bot 用的输送线 AutoCAD 布局识图技能。
+Cursor / Grok skill for reading conveyor AutoCAD layouts.
 
-## 当前版本
+## Current version
 
-**V1.10（2026-10-19）**
+**V1.11 (2026-10-21)**
 
-规则来源锁定（勿混用中间版）：
+V1.11 is the English edition of V1.10. The rules are unchanged.
 
-| 规则块 | 口径 | 要点 |
-|--------|------|------|
-| **正反向判端** | **V1.0** | 单头青/浅蓝块状大箭头 → 箭向=正向；双头或无箭 → 才用远侧到位 |
-| **任务传递** | **V1.8** | 青大箭（单头仅箭向 / 双头双向）+ 接收侧到位门禁；表只记「任务传出」 |
+Rule-source lock (do not mix in intermediate editions):
 
-其它：移栽=`ss+yz+sj`；黄细箭不作传递、不定正反；**识图全程不得参考程序**。
+| Rule block | Edition | Point |
+|------------|---------|-------|
+| **Forward/reverse end** | **V1.0** | A single-head cyan/light-blue block arrow → arrow direction = forward. Double-head, or no arrow → use far-side in-position |
+| **Task transfer** | **V1.8** | Cyan block arrow (single-head: arrow direction only / double-head: both directions) plus a receiving-side in-position interlock. The table records “task out” only |
 
-## 安装
+Other: a transfer unit is `ss+yz+sj`. A thin yellow arrow is neither a transfer nor a forward/reverse call. **Drawing recognition must not consult the program.**
 
-将 `输送线布局识图/` 复制到 agent 的 workflows（或 skills）目录。
+## Install
 
-## 链接
+Copy `conveyor-layout-recognition/` into the agent’s workflows (or skills) directory.
 
-- 正文：[`输送线布局识图/SKILL.md`](./输送线布局识图/SKILL.md)
-- Raw：https://github.com/zzll3/conveyor-layout-skill/raw/main/输送线布局识图/SKILL.md
+## Links
+
+- Body: [`conveyor-layout-recognition/SKILL.md`](./conveyor-layout-recognition/SKILL.md)
+- Raw: https://github.com/zzll3/conveyor-layout-skill/raw/main/conveyor-layout-recognition/SKILL.md
